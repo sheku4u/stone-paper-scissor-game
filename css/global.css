@@ -1,0 +1,15 @@
+:root {
+	--primary-green-color: #8cc461;
+	--dark-green-color: #004429;
+	--primary-yellow-color: #ffd600;
+	--violet: #bd00ff;
+	--blue: #0074b6;
+	--yellow: #ffa943;
+}
+body {
+	background-color: var(--primary-green-color);
+	color: white;
+	font-family: 'roboto', Arial, Helvetica, sans-serif;
+	height: 100vh;
+	
+}

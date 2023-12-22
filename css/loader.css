@@ -1,0 +1,94 @@
+@import 'style.css';
+
+.loading {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	background: #000;
+	z-index: 9999;
+	/* display: none; */
+}
+
+.loading p {
+	color: white;
+	opacity: 1;
+	font-size: 0.9rem;
+	font-weight: 100;
+	letter-spacing: 0.3px;
+	font-family: 'Silkscreen', sans-serif;
+	animation: fadeIn 2s ease-in-out infinite;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0.3;
+	}
+}
+
+.center {
+	display: flex;
+	gap: 1.5rem;
+	z-index: 999;
+}
+.wave {
+	width: 4px;
+	height: 6rem;
+	background: linear-gradient(var(--primary-green-color), var(--dark-green-color));
+	-webkit-animation: wave 1s linear infinite;
+	animation: wave 1s linear infinite;
+	border-radius: 20px;
+}
+.wave:nth-child(2) {
+	animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+	animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+	animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+	animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+	animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+	animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+	animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+	animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+	animation-delay: 0.9s;
+}
+
+@keyframes wave {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+.Loading h1 {
+	color: white;
+}
